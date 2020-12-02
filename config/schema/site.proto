@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Site {
+    enum Role {
+        UNKNOWN = 0;
+        APOP = 1;
+    }
+    string sitecode = 1; //  [(netcfg).primary_key = true];
+    Role role = 2;
+    string region = 3; //  [(netcfg).fk = "region.Region"];
+}

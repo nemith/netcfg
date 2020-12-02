@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Device {
+    string hostname = 1;
+    string site = 2; 
+}
+
+message DeviceRole {
+    string rolename = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "google/protobuf/descriptor.proto";
+
+message FieldOptions {
+    bool primary_key = 1;
+    bool unique = 2;
+    string fk = 3;
+}
+
+extend google.protobuf.FieldOptions {
+    FieldOptions netcfg = 50001; 
+}
